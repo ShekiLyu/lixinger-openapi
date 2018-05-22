@@ -4,7 +4,7 @@
 # -*- coding: utf-8 -*-
 import json
 import requests
-
+from pandas.io.json import json_normalize
 __token__ = None
 
 def _basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
@@ -25,4 +25,4 @@ def _basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
     response = requests.post(url=url, data=json.dumps(query), headers=headers)
     if response.status_code != 200:
         return None
-    return response.json()
+    return json_normalize(response.json())
