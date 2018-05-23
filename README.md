@@ -25,33 +25,32 @@
 > pip install git+http://github.com/ShekiLyu/lixinger-openapi.git
 
 ## 使用示例
-> import lixinger\_openapi as lo
->
-> lo.load\_token("your\_token")
->
-> json\_rlt = lo.json.indice\_fundamental\_info(date='2018-05-21', stockCodes=['000300','000905'], metrics=['pe\_ttm', 'pb'])
-
+```
+import lixinger_openapi as lo
+lo.load_token("your_token")
+json_rlt = lo.json.indice_fundamental_info(date='2018-05-21', stockCodes=['000300','000905'], metrics=['pe_ttm', 'pb'])
+```
 json格式返回结果为Python数组，结构与网站返回的json相同:
 
 ```
 [
   {
     'date': '2018-05-20T16:00:00.000Z',
-    'pe\_ttm': {
+    'pe_ttm': {
       'weightedAvg': 13.22568765724127,
       'median': 24.726652058696498,
       'equalAvg': 18.250245261066897,
       'avg': 28.26107455983107,
-      'y\_10': {
+      'y_10': {
         'weightedAvg': {
           'latestVal': 13.22568765724127,
           'latestValPos': 0.5004111842105263,
           'minVal': 8.011307841787573,
           ......
 ```
-
-> df = lo.data.indice\_fundamental\_info(date='2018-05-21', stockCodes=['000300','000905'], metrics=['pe\_ttm', 'pb'])
-
+```
+df = lo.data.indice_fundamental_info(date='2018-05-21', stockCodes=['000300','000905'], metrics=['pe_ttm', 'pb'])
+```
 dataframe格式返回结果的表头:
 ```
 Index(['date', 'pb.avg', 'pb.equalAvg', 'pb.median', 'pb.weightedAvg',
