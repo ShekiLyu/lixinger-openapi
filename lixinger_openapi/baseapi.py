@@ -1,7 +1,7 @@
-'''
-基础操作
-'''
 # -*- coding: utf-8 -*-
+'''
+基础操作接口
+'''
 import json
 import requests
 from pandas.io.json import json_normalize
@@ -13,6 +13,10 @@ INDICE_FUNDAMENTAL_INFO_URL = "https://www.lixinger.com/api/open/a/indice/fundam
 
 
 def basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
+    '''
+    基础接口，返回json结构
+    上层接口的参数列表和返回结果类型都一致，可重用统一底层接口
+    '''
     if get_token() is None or metrics is None:
         return None
     query = {}
@@ -33,6 +37,9 @@ def basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
     return response.json()
 
 def basic_query_info_df(url, date, startDate, endDate, stockCodes, metrics):
+    '''
+    基础接口，返回dataframe结构
+    '''
     rlt = basic_query_info(url, date, startDate, endDate, stockCodes, metrics)
     if rlt is None:
         return None

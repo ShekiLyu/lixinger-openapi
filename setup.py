@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+'''
+理杏仁开放平台API包安装
+'''
 from pip.req import parse_requirements
 import lixinger_openapi as lo
 from setuptools import (

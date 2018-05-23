@@ -1,7 +1,7 @@
+# -*- coding: utf-8 -*-
 '''
 原始json接口
 '''
-# -*- coding: utf-8 -*-
 from .baseapi import (
     STOCK_FUNDAMENTAL_INFO_URL,
     STOCK_FS_INFO_URL,

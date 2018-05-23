@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+'''
+token全局管理
+'''
 __token__ = None
 
 def load_token(token):
@@ -10,4 +12,7 @@ def load_token(token):
     __token__ = token
 
 def get_token():
+    '''
+    获取token
+    '''
     return __token__

@@ -1,7 +1,7 @@
+# -*- coding: utf-8 -*-
 '''
 DataFrame接口
 '''
-# -*- coding: utf-8 -*-
 from lixinger_openapi.baseapi import(
     STOCK_FUNDAMENTAL_INFO_URL,
     STOCK_FS_INFO_URL,
