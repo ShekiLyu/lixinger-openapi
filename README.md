@@ -4,7 +4,8 @@
 本Python包是[理杏仁开放平台](https://www.lixinger.com/open/api)WEB API的非官方Python封装，目的是方便Python量化分析者使用理杏仁开放平台数据。
 
 ## 功能
-查询理杏仁开放平台数据，返回dataframe
+查询理杏仁开放平台数据，返回json或dataframe
+
 ### 接口列表
 - lixinger\_openapi.load\_token 加载token
 - lixinger\_openapi.json.stock\_fundamental\_info 公司基本面数据(json格式)
