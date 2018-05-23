@@ -18,6 +18,10 @@
 参数列表和理杏仁开放平台完全一致，详细参数介绍见理杏仁开放平台。
 
 ## 安装
+### 从PyPI安装
+> pip install lixinger\_openapi
+
+### 从Github安装
 > pip install git+http://github.com/ShekiLyu/lixinger-openapi.git
 
 ## 使用示例
