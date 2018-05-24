@@ -7,22 +7,24 @@
 查询理杏仁开放平台数据，返回json或dataframe
 
 ### 接口列表
-- lixinger\_openapi.load\_token 加载token
-- lixinger\_openapi.json.stock\_fundamental\_info 公司基本面数据(json格式)
-- lixinger\_openapi.json.stock\_fs\_info 公司财务数据(json格式)
-- lixinger\_openapi.json.indice\_fundamental\_info 指数基本面数据(json格式)
-- lixinger\_openapi.data.stock\_fundamental\_info 公司基本面数据(dataframe格式)
-- lixinger\_openapi.data.stock\_fs\_info 公司财务数据(dataframe格式)
-- lixinger\_openapi.data.indice\_fundamental\_info 指数基本面数据(dataframe格式)
+接口名                                            | 接口功能
+------------------------------------------------ | -------------------------
+lixinger\_openapi.load\_token                    | 加载token
+lixinger\_openapi.json.stock\_fundamental\_info  | 公司基本面数据(json格式)
+lixinger\_openapi.json.stock\_fs\_info           | 公司财务数据(json格式)
+lixinger\_openapi.json.indice\_fundamental\_info | 指数基本面数据(json格式)
+lixinger\_openapi.data.stock\_fundamental\_info  | 公司基本面数据(dataframe格式)
+lixinger\_openapi.data.stock\_fs\_info           | 公司财务数据(dataframe格式)
+lixinger\_openapi.data.indice\_fundamental\_info | 指数基本面数据(dataframe格式)
 
 参数列表和理杏仁开放平台完全一致，详细参数介绍见理杏仁开放平台。
 
 ## 安装
 ### 从PyPI安装
-> pip install lixinger\_openapi
+`pip install lixinger_openapi`
 
 ### 从Github安装
-> pip install git+http://github.com/ShekiLyu/lixinger-openapi.git
+`pip install git+http://github.com/ShekiLyu/lixinger-openapi.git`
 
 ## 使用示例
 ```
@@ -67,3 +69,5 @@ Index(['date', 'pb.avg', 'pb.equalAvg', 'pb.median', 'pb.weightedAvg',
       dtype='object', length=139)
 ```
 结果里包含139列数据，分别对应理杏仁返回的json数据进行扁平化处理后的结果，嵌套的数据用key1.key11.key111的方式作为列名。
+
+详细使用方法请参考[用户使用指南](https://github.com/ShekiLyu/lixinger-openapi/blob/master/doc/user_guide.ipynb)。
