@@ -6,7 +6,7 @@ import lixinger_openapi.json
 import lixinger_openapi.data
 from lixinger_openapi.token import load_token, get_token
 
-__version__ = '0.1.1'
+__version__ = '0.1.2'
 
 __author__ = 'sheki lyu'
 
