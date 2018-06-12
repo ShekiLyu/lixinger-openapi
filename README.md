@@ -35,10 +35,16 @@ lixinger\_openapi.data | hk\_indice\_fundamental\_info | 港股指数基本面�
 
 ## 安装
 ### 从PyPI安装
-`pip install lixinger_openapi`
+`pip install lixinger-openapi`
 
 ### 从Github安装
 `pip install git+http://github.com/ShekiLyu/lixinger-openapi.git`
+
+### 从PyPI更新版本
+`pip install --upgrade lixinger-openapi`
+
+### 从Github更新版本
+`pip install --upgrade git+http://github.com/ShekiLyu/lixinger-openapi.git`
 
 ## 使用示例
 ```
