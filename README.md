@@ -7,15 +7,21 @@
 查询理杏仁开放平台数据，返回json或dataframe
 
 ### 接口列表
-包                     | 接口名                    | 接口功能
----------------------- | ------------------------- | -------------------------
-lixinger\_openapi      | load\_token               | 加载token
-lixinger\_openapi.json | stock\_fundamental\_info  | 公司基本面数据(json格式)
-lixinger\_openapi.json | stock\_fs\_info           | 公司财务数据(json格式)
-lixinger\_openapi.json | indice\_fundamental\_info | 指数基本面数据(json格式)
-lixinger\_openapi.data | stock\_fundamental\_info  | 公司基本面数据(dataframe格式)
-lixinger\_openapi.data | stock\_fs\_info           | 公司财务数据(dataframe格式)
-lixinger\_openapi.data | indice\_fundamental\_info | 指数基本面数据(dataframe格式)
+包                     | 接口名                        | 接口功能
+---------------------- | ----------------------------- | -------------------------
+lixinger\_openapi      | load\_token                   | 加载token
+lixinger\_openapi.json | stock\_fundamental\_info      | A股公司基本面数据(json格式)
+lixinger\_openapi.json | stock\_fs\_info               | A股公司财务数据(json格式)
+lixinger\_openapi.json | indice\_fundamental\_info     | A股指数基本面数据(json格式)
+lixinger\_openapi.json | hk\_stock\_fundamental\_info  | 港股公司基本面数据(json格式)
+lixinger\_openapi.json | hk\_stock\_fs\_info           | 港股公司财务数据(json格式)
+lixinger\_openapi.json | hk\_indice\_fundamental\_info | 港股指数基本面数据(json格式)
+lixinger\_openapi.data | stock\_fundamental\_info      | A股公司基本面数据(dataframe格式)
+lixinger\_openapi.data | stock\_fs\_info               | A股公司财务数据(dataframe格式)
+lixinger\_openapi.data | indice\_fundamental\_info     | A股指数基本面数据(dataframe格式)
+lixinger\_openapi.data | hk\_stock\_fundamental\_info  | 港股公司基本面数据(dataframe格式)
+lixinger\_openapi.data | hk\_stock\_fs\_info           | 港股公司财务数据(dataframe格式)
+lixinger\_openapi.data | hk\_indice\_fundamental\_info | 港股指数基本面数据(dataframe格式)
 
 参数列表和理杏仁开放平台完全一致，详细参数介绍见理杏仁开放平台。
 
