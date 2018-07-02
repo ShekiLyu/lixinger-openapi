@@ -105,3 +105,6 @@ venv.bak/
 
 # mac
 .DS_Store
+
+# token config file
+token.cfg

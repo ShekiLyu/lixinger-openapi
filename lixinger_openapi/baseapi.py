@@ -35,8 +35,6 @@ def basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
     query["metrics"] = metrics
     headers = {"Content-Type": "application/json"}
     response = requests.post(url=url, data=json.dumps(query), headers=headers)
-    if response.status_code != 200:
-        return None
     return response.json()
 
 def basic_query_info_df(url, date, startDate, endDate, stockCodes, metrics):
@@ -53,6 +51,7 @@ def basic_query_info_df(url, date, startDate, endDate, stockCodes, metrics):
         return_value['msg'] = 'query failed.'
     else:
         return_value['code'] = rlt['code']
-        return_value['data'] = json_normalize(rlt['data'])
         return_value['msg'] = rlt['msg']
+        if 'data' in rlt.keys():
+            return_value['data'] = json_normalize(rlt['data'])
     return return_value
