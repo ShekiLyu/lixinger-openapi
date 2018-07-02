@@ -41,9 +41,18 @@ def basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
 
 def basic_query_info_df(url, date, startDate, endDate, stockCodes, metrics):
     '''
-    基础接口，返回dataframe结构
+    基础接口，返回字典结构
+    key     value       type
+    code    返回值       int
+    data    返回结果     dataframe
+    msg     返回消息     string
     '''
+    return_value = {'code': -1, 'data': None, 'msg': ''}
     rlt = basic_query_info(url, date, startDate, endDate, stockCodes, metrics)
     if rlt is None:
-        return None
-    return json_normalize(rlt)
+        return_value['msg'] = 'query failed.'
+    else:
+        return_value['code'] = rlt['code']
+        return_value['data'] = json_normalize(rlt['data'])
+        return_value['msg'] = rlt['msg']
+    return return_value
