@@ -4,6 +4,9 @@
 本Python包是[理杏仁开放平台](https://www.lixinger.com/open/api)WEB API的非官方Python封装，目的是方便Python量化分析者使用理杏仁开放平台数据。
 
 ## 版本更新内容
+### 版本0.2.4
+适配新URL，修改接口名，禁用不可用接口
+
 ### 版本0.2.3
 适配新的请求URL
 
@@ -28,18 +31,14 @@
 包                     | 接口名                        | 接口功能
 ---------------------- | ----------------------------- | -------------------------
 lixinger\_openapi      | load\_token                   | 加载token
-lixinger\_openapi.json | stock\_fundamental\_info      | A股公司基本面数据(json格式)
-lixinger\_openapi.json | stock\_fs\_info               | A股公司财务数据(json格式)
-lixinger\_openapi.json | indice\_fundamental\_info     | A股指数基本面数据(json格式)
-lixinger\_openapi.json | hk\_stock\_fundamental\_info  | 港股公司基本面数据(json格式)
-lixinger\_openapi.json | hk\_stock\_fs\_info           | 港股公司财务数据(json格式)
-lixinger\_openapi.json | hk\_indice\_fundamental\_info | 港股指数基本面数据(json格式)
-lixinger\_openapi.data | stock\_fundamental\_info      | A股公司基本面数据(dataframe格式)
-lixinger\_openapi.data | stock\_fs\_info               | A股公司财务数据(dataframe格式)
-lixinger\_openapi.data | indice\_fundamental\_info     | A股指数基本面数据(dataframe格式)
-lixinger\_openapi.data | hk\_stock\_fundamental\_info  | 港股公司基本面数据(dataframe格式)
-lixinger\_openapi.data | hk\_stock\_fs\_info           | 港股公司财务数据(dataframe格式)
-lixinger\_openapi.data | hk\_indice\_fundamental\_info | 港股指数基本面数据(dataframe格式)
+lixinger\_openapi.json | stock\_fundamental            | A股公司基本面数据(json格式)
+lixinger\_openapi.json | indice\_fundamental           | A股指数基本面数据(json格式)
+lixinger\_openapi.json | hk\_stock\_fundamental        | 港股公司基本面数据(json格式)
+lixinger\_openapi.json | hk\_indice\_fundamental       | 港股指数基本面数据(json格式)
+lixinger\_openapi.data | stock\_fundamental            | A股公司基本面数据(dataframe格式)
+lixinger\_openapi.data | indice\_fundamental           | A股指数基本面数据(dataframe格式)
+lixinger\_openapi.data | hk\_stock\_fundamental        | 港股公司基本面数据(dataframe格式)
+lixinger\_openapi.data | hk\_indice\_fundamental       | 港股指数基本面数据(dataframe格式)
 
 参数列表和理杏仁开放平台完全一致，详细参数介绍见理杏仁开放平台。
 
