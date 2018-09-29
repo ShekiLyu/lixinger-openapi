@@ -7,13 +7,13 @@ import requests
 from pandas.io.json import json_normalize
 from lixinger_openapi.token import get_token
 
-STOCK_FUNDAMENTAL_URL = "https://open.lixinger.com/api/a/stock/fundamental"
+STOCK_FUNDAMENTAL_URL = "https://open.lixinger.com/api/stock/fundamental/a"
 #STOCK_FS_INFO_URL = "https://open.lixinger.com/api/a/stock/fs-info"
-INDICE_FUNDAMENTAL_URL = "https://open.lixinger.com/api/a/indice/fundamental"
+INDICE_FUNDAMENTAL_URL = "https://open.lixinger.com/api/indice/fundamental/a"
 
-HK_STOCK_FUNDAMENTAL_URL = "https://open.lixinger.com/api/h/stock/fundamental"
+HK_STOCK_FUNDAMENTAL_URL = "https://open.lixinger.com/api/stock/fundamental/h"
 #HK_STOCK_FS_INFO_URL = "https://open.lixinger.com/api/h/stock/fs-info"
-HK_INDICE_FUNDAMENTAL_URL = "https://open.lixinger.com/api/h/indice/fundamental"
+HK_INDICE_FUNDAMENTAL_URL = "https://open.lixinger.com/api/indice/fundamental/h"
 
 def basic_query_info(url, date, startDate, endDate, stockCodes, metrics):
     '''
