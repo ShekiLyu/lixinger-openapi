@@ -108,3 +108,6 @@ venv.bak/
 
 # token config file
 token.cfg
+
+# vim swp temp files
+*.swp
