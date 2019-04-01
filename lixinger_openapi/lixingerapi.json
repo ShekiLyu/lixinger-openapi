@@ -1,0 +1,27 @@
+{
+    "a":{
+        "stock":{
+            "basic": "https://open.lixinger.com/api/a/stock",
+            "indice": "https://open.lixinger.com/api/a/stock/indice",
+            "industry": "https://open.lixinger.com/api/a/stock/industry",
+            "fundamental": "https://open.lixinger.com/api/a/stock/fundamental",
+            "fs": {
+                "industry": "https://open.lixinger.com/api/a/stock/fs/industry",
+                "bank": "https://open.lixinger.com/api/a/stock/fs/bank",
+                "security": "https://open.lixinger.com/api/a/stock/fs/security",
+                "insurance": "https://open.lixinger.com/api/a/stock/fs/insurance"
+            }
+        },
+        "indice":{
+
+        }
+    },
+    "h":{
+        "stock":{
+
+        },
+        "indice":{
+            
+        }
+    }
+}

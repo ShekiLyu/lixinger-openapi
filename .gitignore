@@ -111,3 +111,5 @@ token.cfg
 
 # vim swp temp files
 *.swp
+
+.vscode/
