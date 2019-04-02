@@ -6,15 +6,16 @@ import os
 
 __token__ = None
 
-def set_token(token):
+def set_token(token, write_token = True):
     '''
     加载token
     '''
     global __token__
     __token__ = token
-    token_cfg = os.getcwd() + '/token.cfg'
-    with open(token_cfg, 'w') as f:
-        f.write(token)
+    if write_token:
+        token_cfg = os.getcwd() + '/token.cfg'
+        with open(token_cfg, 'w') as f:
+                f.write(token)
 
 def get_token():
     '''
