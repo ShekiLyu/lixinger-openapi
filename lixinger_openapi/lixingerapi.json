@@ -1,27 +1,49 @@
 {
+    "baseurl": "https://open.lixinger.com/api",
     "a":{
         "stock":{
-            "basic": "https://open.lixinger.com/api/a/stock",
-            "indice": "https://open.lixinger.com/api/a/stock/indice",
-            "industry": "https://open.lixinger.com/api/a/stock/industry",
-            "fundamental": "https://open.lixinger.com/api/a/stock/fundamental",
+            "basic": "/a/stock",
+            "indice": "/a/stock/indice",
+            "industry": "/a/stock/industry",
+            "fundamental": "/a/stock/fundamental",
             "fs": {
-                "industry": "https://open.lixinger.com/api/a/stock/fs/industry",
-                "bank": "https://open.lixinger.com/api/a/stock/fs/bank",
-                "security": "https://open.lixinger.com/api/a/stock/fs/security",
-                "insurance": "https://open.lixinger.com/api/a/stock/fs/insurance"
+                "industry": "/a/stock/fs/industry",
+                "bank": "/a/stock/fs/bank",
+                "security": "/a/stock/fs/security",
+                "insurance": "/a/stock/fs/insurance"
             }
         },
         "indice":{
-
+            "basic": "/a/indice",
+            "fundamental": "/a/indice/fundamental",
+            "fs": "/a/indice/fs",
+            "samples": "/a/indice/samples"
+        },
+        "industry": {
+            "basic": "/a/industry",
+            "gz": {
+                "basic": "/a/industry/fundamental/gz",
+                "fs": "/a/industry/fs/gz",
+                "samples": "/a/industry/samples/gz"
+            }
         }
     },
     "h":{
-        "stock":{
-
+        "stock": {
+            "basic": "/h/stock",
+            "indice": "/h/stock/indice",
+            "industry": "/h/stock/industry",
+            "fundamental": "/h/stock/fundamental",
+            "fs": {
+                "industry": "/h/stock/fs/industry",
+                "bank": "/h/stock/fs/bank",
+                "insurance": "/h/stock/fs/insurance"
+            }
         },
-        "indice":{
-            
+        "indice": {
+            "basic": "/h/indice",
+            "fundamental": "/h/indice/fundamental",
+            "samples": "/h/indice/samples"
         }
     }
 }
