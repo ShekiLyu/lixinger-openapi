@@ -2,11 +2,10 @@
 '''
 理杏仁开放平台API，非官方
 '''
-import lixinger_openapi.json
-import lixinger_openapi.data
-from lixinger_openapi.token import load_token, get_token
+from lixinger_openapi.query import query_json, query_dataframe
+from lixinger_openapi.token import set_token, get_token
 
-__version__ = '0.2.5'
+__version__ = '1.0.0'
 
 __author__ = 'sheki lyu'
 
