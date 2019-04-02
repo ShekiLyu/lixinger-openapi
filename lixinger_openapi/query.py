@@ -43,8 +43,10 @@ def query_dataframe(url_suffix, query_params):
     if rlt is None:
         return_value['msg'] = 'query failed.'
     else:
-        return_value['code'] = rlt['code']
-        return_value['msg'] = rlt['msg']
+        if 'code' in rlt.keys():
+            return_value['code'] = rlt['code']
+        if 'msg' in rlt.keys():
+            return_value['msg'] = rlt['msg']
         if 'data' in rlt.keys():
             return_value['data'] = json_normalize(rlt['data'])
     return return_value
