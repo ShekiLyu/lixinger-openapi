@@ -23,7 +23,7 @@ def query_json(url_suffix, query_params):
         query_params: API的查询json，不需要填token
     '''
     if get_token() is None:
-        return None
+        raise Exception("token未设置")
     query_params["token"] = get_token()
   
     headers = {"Content-Type": "application/json"}
