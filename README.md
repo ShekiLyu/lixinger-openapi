@@ -62,4 +62,4 @@
 
 ## 使用示例
 
-详细使用方法请参考[用户使用指南](https://github.com/ShekiLyu/lixinger-openapi/blob/master/doc/user_guide.ipynb)。
+详细使用方法请参考[用户使用指南](https://github.com/ShekiLyu/lixinger-openapi/blob/master/doc/user_guide.md)。
