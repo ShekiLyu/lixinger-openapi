@@ -50,7 +50,7 @@ lo.set_token("your_token", write_token=False)
 
 
 ```python
-json_rlt = lo.query_json('a.stock.fundamental', 
+json_rlt = lo.query_json('a.stock.fundamental.non_financial', 
     {
         "date": "2018-01-19",
         "stockCodes": [
@@ -72,7 +72,7 @@ print(json_rlt)
 
 
 ```python
-dataframe_rlt = lo.query_dataframe('a.stock.fundamental', 
+dataframe_rlt = lo.query_dataframe('a.stock.fundamental.non_financial', 
     {
         "date": "2018-01-19",
         "metricsList": ["pe_ttm", "mc"],
@@ -99,7 +99,7 @@ print('\nmsg: ' + dataframe_rlt['msg'])
 
 
 ```python
-json_rlt = lo.query_json('a.indice', {
+json_rlt = lo.query_json('a.index', {
     "stockCodes": [
         "000016"
     ]
@@ -114,7 +114,7 @@ print(json_rlt)
 
 
 ```python
-dataframe_rlt = lo.query_dataframe('a.indice', {
+dataframe_rlt = lo.query_dataframe('a.index', {
     "stockCodes": [
         "000016"
     ]
