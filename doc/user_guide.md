@@ -1,4 +1,3 @@
-
 # 用户使用指南
 
 ## 安装
@@ -58,7 +57,7 @@ json_rlt = lo.query_json('a.stock.fundamental',
             "000028",
             "600511"
         ],
-        "metrics": [
+        "metricsList": [
             "pe_ttm",
             "mc"
         ]
@@ -67,7 +66,7 @@ print(json_rlt)
 ```
 
     {'data': [{'date': '2018-01-19T00:00:00+08:00', 'pe_ttm': 21.046568599508507, 'stockCode': '000028', 'mc': 26663748314.4}, {'date': '2018-01-19T00:00:00+08:00', 'pe_ttm': 21.459988206744743, 'stockCode': '600511', 'mc': 20346751061}], 'code': 0, 'msg': 'success'}
-
+    
 
 ##### dataframe格式
 
@@ -76,7 +75,7 @@ print(json_rlt)
 dataframe_rlt = lo.query_dataframe('a.stock.fundamental', 
     {
         "date": "2018-01-19",
-        "metrics": ["pe_ttm", "mc"],
+        "metricsList": ["pe_ttm", "mc"],
         "stockCodes": ["000028", "600511"]
     })
 print('code: '+ str(dataframe_rlt['code']))
@@ -93,7 +92,7 @@ print('\nmsg: ' + dataframe_rlt['msg'])
     1  2018-01-19T00:00:00+08:00  2.034675e+10  21.459988    600511
     
     msg: success
-
+    
 
 #### A股指数基本信息
 ##### json格式
@@ -109,7 +108,7 @@ print(json_rlt)
 ```
 
     {'data': [{'source': 'sh', 'cnName': '上证50', 'publishDate': '2004-01-01T16:00:00.000Z', 'stockCode': '000016', 'areaCode': 'cn', 'market': 'a'}], 'code': 0, 'msg': 'success'}
-
+    
 
 ##### dataframe格式
 
@@ -133,4 +132,4 @@ print('\nmsg: ' + dataframe_rlt['msg'])
     0       cn   上证50      a  2004-01-01T16:00:00.000Z     sh    000016
     
     msg: success
-
+    
